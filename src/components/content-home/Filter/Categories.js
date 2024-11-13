@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../contentHome.module.css'
 import { useDispatch } from 'react-redux';
 import { loadProductsByCategory } from '../../../redux/actions/ActionProducts';
@@ -13,7 +13,11 @@ export default function Categories({loadingCategories, categories }) {
         setSelectedCategory(categorySlug);
         dispatch(loadProductsByCategory(categorySlug));
     };
-
+    useEffect(() => {
+        if (categories?.length > 0) {
+            setSelectedCategory(categories[0].slug); 
+        }
+    }, [categories]);
     return (
         <>
             <div onClick={() => setOpenCategories(!openCategories)}
@@ -28,7 +32,6 @@ export default function Categories({loadingCategories, categories }) {
                 categories?.map((category, index) => (
                     <div style={{ marginBottom: "5px" }} className='d-flex items-center gap-10' key={category?.id}>
                         <input
-                            defaultChecked={index == 0}
                             checked={selectedCategory === category.slug} 
                             onChange={() => handleRadioChange(category.slug)} 
                             className={styles.checkbox} type='radio' />
