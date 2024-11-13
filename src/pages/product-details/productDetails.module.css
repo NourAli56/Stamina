@@ -1,0 +1,64 @@
+.divDetails{
+    padding: 40px 128px;
+}
+.divInfo{
+    width: 55%;
+}
+.title{
+    font-size: 28px;
+    color: rgba(48, 55, 63, 1);
+    font-weight: 500;
+}
+.description{
+    color: rgba(108, 108, 108, 1);
+    font-size: 16px;
+    margin-top: 5px;
+}
+.tableDetails{
+    width: 80%;
+    background-color: red;
+    margin-top: 20px;
+}
+.leftTable{
+    width: 30%;
+    margin-left: 40px;
+}
+.rightTable{
+    padding: 20px 40px;
+    width: 70%;
+    
+}
+.oneTableDetails:nth-child(odd) {
+    background-color: rgba(248, 246, 242, 1);
+}
+
+.oneTableDetails:nth-child(even) {
+    background-color: rgba(250, 250, 250, 1);
+}
+.compareButton{
+    margin-top: 25px;
+    padding: 13px;
+    background-color: rgba(247, 158, 16, 1);
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgba(247, 158, 16, 1);
+    outline: none;
+    color: white;
+    border-radius: 3px;
+}
+.innerDetails{
+    flex-direction: row;
+}
+@media screen and (max-width: 1350px) {
+    .divDetails{
+        padding: 40px 50px;
+    }
+}
+@media screen and (max-width: 1204px) {
+    .innerDetails{
+        flex-direction: column;
+    }
+    .divInfo{
+        width: 100%;
+    }
+}

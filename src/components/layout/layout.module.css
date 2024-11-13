@@ -1,0 +1,164 @@
+.topBar {
+    padding: 0px 128px;
+    height: 48px;
+    background-color: #30373F;
+    flex-direction: row;
+}
+
+.navbar {
+    padding: 0px 128px;
+    height: 88px;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.logo {
+    width: 225px;
+    height: 70px;
+}
+
+.spanLink {
+    font-weight: 400;
+    color: #30373F;
+    font-size: 16px;
+}
+
+.activeLink {
+    color: #F79E10;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.categories {
+    width: 180px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 200;
+    top: 110px;
+    left: 40%;
+    background-color: white;
+    box-shadow: 0px 0px 20px -3px rgba(170, 170, 170, 0.5);
+    padding: 15px;
+}
+
+.boxSearch {
+    background-color: #F7F7F7;
+    padding: 10px;
+    border: 1px solid #6C6C6C29;
+    border-radius: 8px;
+}
+
+.inputSearch {
+    width: 120px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 100%;
+}
+
+.category {
+    padding: 5px 0px;
+    border-bottom: 1px solid #30373f3f;
+}
+
+.category:last-child {
+    border-bottom: none;
+}
+
+.links {
+    gap: 30px;
+    flex-direction: row;
+}
+.footer{
+    background: linear-gradient(rgba(48, 55, 63, 0.64), rgba(0, 0, 0, 0.3)), url(../../assets/Images/Background\ of\ footer.svg) center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 442px;
+    padding: 90px 128px;
+    flex-wrap: wrap;
+}
+.oneBox{
+    width: 23%;
+}
+.titleFooter{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.aboutFooter{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.linksFooter{
+    color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.inputFooter{
+    padding: 10px;
+    outline: none;
+    border-radius: 3px;
+}
+.buttonFooter{
+    padding: 13px;
+    background-color: rgba(247, 158, 16, 1);
+    font-size: 11px;
+    cursor: pointer;
+    border: 1px solid rgba(247, 158, 16, 1);
+    outline: none;
+    color: white;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1147px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 128px;
+        height: 195px;
+    }
+}
+
+
+@media screen and (max-width: 970px) {
+    .topBar {
+        flex-direction: column;
+        height: 70px;
+        padding: 15px 128px;
+    }
+    .rightTopBar {
+        margin-top: 5px;
+    }
+    .footer{
+        padding: 90px 40px;
+    }
+    .oneBox{
+        width: 30%;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 726px) {
+    .links {
+        gap: 5px;
+        flex-direction: column;
+    }
+    .navbar{
+        height: 300px;
+    }
+    .oneBox{
+        width: 46%;
+    }
+}
+@media screen and (max-width: 621px) {
+    .topBar{
+        padding: 15px 20px;
+    }
+    .oneBox{
+        width: 100%;
+    }
+}

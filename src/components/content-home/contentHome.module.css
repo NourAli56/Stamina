@@ -1,0 +1,130 @@
+.contentHome{
+    padding: 40px 128px;
+    flex-direction: row;
+}
+.filter{
+    width: 25%;
+    padding: 20px 30px;
+    background-color: rgba(245, 245, 245, 1);
+}
+.title{
+    color: rgba(48, 55, 63, 1);
+    font-size: 16px;
+    font-weight: bold;
+}
+.arrow{
+    color: rgba(48, 55, 63, 1);
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(48, 55, 63, 0.16);
+    margin: 15px 0px;
+}
+.circleColor{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+.divColor{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.oneColor{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nameColor{
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: center;
+    color: rgba(48, 55, 63, 1);
+}
+.checkbox{
+    background-color: transparent;
+}
+.divProduct{
+    flex-wrap: wrap;
+}
+.oneProduct{
+    width: 31%;
+    margin-top: 5px;
+    color: rgba(48, 55, 63, 1);
+}
+.oneProduct1{
+    width: 23%;
+    margin-top: 5px;
+    color: rgba(48, 55, 63, 1);
+}
+.imgProduct{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.productCategory{
+    background-color: rgba(247, 158, 16, 0.16);
+    border: 1px solid rgba(247, 158, 16, 1);
+    color: rgba(247, 158, 16, 1);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.circleProductColor{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.allProducts{
+    width: 70%;
+}
+@media screen and (max-width : 1185px) {
+    .oneProduct{
+        width: 46%;
+    }  
+}
+
+@media screen and (max-width : 928px) {
+    .contentHome{
+        padding: 40px 30px;
+    }
+    
+}
+@media screen and (max-width : 879px) {
+    .contentHome{
+        flex-direction: column;
+    }
+    .filter{
+        width: 100%;
+    }
+    .allProducts{
+        width: 100%;
+        margin-top: 25px !important;
+    }
+}
+@media screen and (max-width : 539px) {
+    .oneProduct{
+        width: 100%;
+    }  
+}
+@media screen and (max-width : 1076px) {
+    .oneProduct1{
+        width: 30% !important;
+    }  
+}
+@media screen and (max-width: 913px) {
+    .oneProduct1{
+        width: 46% !important;
+    }  
+}
+@media screen and (max-width: 950px) {
+    .oneProduct1{
+        width: 100% !important;
+    }  
+}
